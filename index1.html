@@ -1,88 +1,113 @@
-Stars.html : 
 <!DOCTYPE html>
 <html>
   <head>
     <title>Satars menus:</title>
     <style>
-  body{
-  background-image:url("https://www.shutterstock.com/shutterstock/videos/1076174495/thumb/2.jpg?ip=x480");
-    background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-h1 {text-align: center;
- font-size: 4em;
-color:blueviolet }
-
-      div {text-align: center;}
-      
-
- 
- #go{background-color: #fbeee0;
-  border: 2px solid #422800;
-  border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0 18px;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-74:hover {
-  background-color: #fff;
-}
-
-.button-74:active {
-  box-shadow: #422800 2px 2px 0 0;
-  transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-  .button-74 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
-}
-#stars-menu{  width:35% ;
-   height: 30%;
-   border-color: rgb(225, 0, 255);
-   border-width: 10px;}
-  
-    </style>
-  </head>
-  <body>
-    
-    <div class="content">
-        <h1>Satars menus:</h1>
-        <div id="select">
-            <form action='#' method='post'>
-      categories:<select id="satars-menu">
-       
-        <option value="singres">Singres</option>
-        <option value="actress">Actress</option> 
-        
-        </select>
-      <button id="go" onclick="goToStars()">Go</button>
-    </div>
-
-
-    <script>
-        var menu =src("https://www.lemonde.fr/football/article/2023/03/06/football-fin-de-saison-pour-le-bresilien-neymar-qui-va-etre-opere-a-la-cheville_6164406_1616938.html");
-      function goToStars() {
-        var menu = document.getElementById("satars-menu");
-        var selectedOption = menu.options[menu.selectedIndex].value;
-        window.location.href = selectedOption + ".html";
+      body{
+        background-image:url("https://www.shutterstock.com/shutterstock/videos/1076174495/thumb/2.jpg?ip=x480");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
       }
-   
+      h1 {
+        text-align: center;
+        font-size: 4em;
+        color:blueviolet
+      }
+      div {
+        text-align: center;
+      }
+      #go {
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 0 18px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+      .button-74:hover {
+        background-color: #fff;
+      }
+      .button-74:active {
+        box-shadow: #422800 2px 2px 0 0;
+        transform: translate(2px, 2px);
+      }
+      @media (min-width: 768px) {
+        .button-74 {
+          min-width: 120px;
+          padding: 0 25px;
+        }
+      }
+      h1 {
+        font-family: "Titan One", cursive;
+      }
+      .wrapper {
+        width: 100vw;
+        text-align: center;
+      }
+      .wrapper span {
+        -webkit-text-stroke-width: 1.25px;
+        -webkit-text-stroke-color: #000;
+        font-size: 100px;
+        text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
+        transform: translate(0, 100%) rotate(4deg);
+        animation: jump 2s ease-in-out infinite;
+        display: inline-block;
+        font-family: "Titan One", cursive;
+        color: #fff;
+      }
+      @for $i from 1 through 7 {
+        &:nth-child(#{$i}) {
+          animation-delay: 120ms * $i;
+        }
+      }
+      @keyframes jump {
+        33% {
+          text-shadow: 0 60px #f37121, 0 150px #f2aaaa;
+        }
+        50% {
+          transform: translate(0, 0) rotate(-4deg);
+          text-shadow: 0}
+        }
+        </style>
+          </head>
+          <body>
+            
+            <div class="content">
+                <h1>Satars menus:</h1>
+                <div id="select">
+                    <form action='#' method='post'>
+              categories:<select id="satars-menu">
+               
+                <option value="singres">Singres</option>
+                <option value="actress">Actress</option> 
+                
+                </select>
+              <button id="go" onclick="goToStars()">Go</button>
+            </div>
+        
+        
+            <script>
+                var menu =src("https://www.lemonde.fr/football/article/2023/03/06/football-fin-de-saison-pour-le-bresilien-neymar-qui-va-etre-opere-a-la-cheville_6164406_1616938.html");
+              function goToStars() {
+                var menu = document.getElementById("satars-menu");
+                var selectedOption = menu.options[menu.selectedIndex].value;
+                window.location.href = selectedOption + ".html";
+              }
+           
+        
+            </script>
+          </body>
+        </html>
 
-    </script>
-  </body>
-</html>
+
