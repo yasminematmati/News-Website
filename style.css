@@ -79,10 +79,7 @@
   }
 
 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   background-color: #f1f1f1;
@@ -160,10 +157,7 @@ footer {
   padding: 20px;
   margin-top: 20%;
   text-align: center;
-} margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+} 
 
       body {
         background-color: #f1f1f1;
