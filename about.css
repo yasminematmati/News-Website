@@ -1,0 +1,32 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 280px;
+    margin-right: 280px;
+    margin-top: 25px;
+    padding: 20px;
+    width: 30%;
+  }
+  
+  .card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .creator-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  
+  
+  
+  

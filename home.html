@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>News Website</title>
+
+
+
+  <style>
+ #video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+  }
+  
+    </style>
+    
+</head>
+
+<body>
+  <div>
+    <video autoplay muted loop id="video">
+      <source src="news.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    </div>
+
+  <header>
+    <h1>News Website</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+    </ul>
+    
+  </nav>
+  <main>
+    <div class="article">
+      <img src="https://ichef.bbci.co.uk/images/ic/1200x675/p07kfjyp.jpg" alt="Article Image">
+      <h2>Article Title</h2>
+      <p>Today, international news is dominated by a wide range of events and developments from around the world. One major story is the ongoing COVID-19 pandemic, with new cases and variants continuing to emerge in many countries.
+      <p id="ezyeda" style="display: none;"> Additionally, there are ongoing conflicts in various parts of the world, such as the war in Syria and the conflict between Israel and Palestine. The political landscape is also shifting, with recent elections in several countries, including Germany and Russia, and political tensions escalating between the United States and Russia. Climate change is also a major topic of international news, with extreme weather events, environmental disasters, and efforts to mitigate the effects of global warming making headlines. Overall, international news is a complex and constantly evolving landscape, reflecting the diverse and interconnected nature of the modern world. </p>
+      <a href="#" id="bech-nzid" onclick="add()">Read More</a> </p>
+    </div>
+    
+
+    
+    
+    <div class="article">
+      <img src="https://i.ytimg.com/vi/87ORsmVj29Y/maxresdefault.jpg" alt="Article Image">
+      <p>Breaking news refers to the latest and most important information about a particular event or situation that has just occurred. It is typically delivered through various media channels such as television, radio, and social media platforms
+        <p id="ezyeda2" style="display: none;">  Breaking news often covers topics such as natural disasters, political upheavals, terrorist attacks, or major scientific discoveries. The aim of breaking news is to inform the public about the latest developments and provide them with timely and accurate information. In today's fast-paced world, breaking news has become an essential part of our daily lives as it helps us stay informed and make informed decisions. </p>
+        <a href="#" id="bech-nziid" onclick="add2()">Read More</a> </p>
+</main> 
+<script src="main.js"></script>
+<footer>
+    <p>&copy; 2023 News Website. All Rights Reserved.</p>
+  </footer>
+</body>     
