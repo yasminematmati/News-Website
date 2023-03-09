@@ -1,25 +1,19 @@
-const newsData = [
+var newsData = [
   {
     category: 'sports',
     articles: [
-      {
-        title: 'Tom Brady signs one-year extension with the Tampa Bay Buccaneers',
-        description: 'Tom Brady has signed a one-year extension with the Tampa Bay Buccaneers that will keep him with the team through the 2023 season. The 45-year-old quarterback led the Buccaneers to their second Super Bowl victory in 2021.',
-        image: 'https://www.tampabay.com/resizer/V_vC3Nq3MKeOzucZKjDdRi-QbM=/800x450/top/cloudfront-us-east-1.images.arcpublishing.com/tbt/DGRZRAV7EYMAHANUGVYBQCJZM4.jpg',
-        author: 'Mike Jones',
-        date: '2022-03-09'
-      },
+ 
       {
         title: 'Serena Williams advances to quarterfinals at Australian Open',
         description: 'Serena Williams has advanced to the quarterfinals at the Australian Open after defeating Anastasia Potapova in straight sets. The 23-time Grand Slam champion is aiming to win her eighth Australian Open title.',
-        image: 'https://www.essentiallysports.com/wp-content/uploads/2022/01/56z6c5-1-696x442.jpg',
+        image: 'https://tse3.mm.bing.net/th/id/OIP.g5tRwDCH15ZqcMcy5PKtRAHaE3?pid=ImgDet&rs=1',
         date: '2022-01-24',
         author: 'Emma Stone',
       },
       {
         title: 'Los Angeles Lakers defeat Brooklyn Nets in NBA Finals rematch',
         description: 'The Los Angeles Lakers defeated the Brooklyn Nets 112-107 in a rematch of the 2022 NBA Finals. LeBron James led the way for the Lakers with 30 points, 12 rebounds, and 7 assists.',
-        image: 'https://cdn.vox-cdn.com/thumbor/69OzweEY7fwh1zJ0V7OQ9IlOv1c=/0x0:4177x2785/920x613/filters:focal(1756x546:2422x1212):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70783875/1338763577.jpg.0.jpg',
+        image: 'https://tse2.mm.bing.net/th/id/OIP.Q-p6CMoH4ncqi57DvaaVbAHaE7?pid=ImgDet&rs=1',
         date: '2022-11-28',
         author: 'Tom Williams',
       },
@@ -31,14 +25,14 @@ const newsData = [
       {
         title: 'President Biden signs $1.2 trillion infrastructure bill',
         description: 'President Joe Biden signed a $1.2 trillion infrastructure bill into law on Monday, saying it would create jobs and improve the country\'s roads, bridges, and broadband access. The bill had bipartisan support in Congress.',
-        image: 'https://cdn.pixabay.com/photo/2021/11/03/14/22/white-house-6766017_1280.jpg',
+        image: 'https://www.shutterstock.com/fr/image-photo/business-people-working-meeting-conference-close-1413018278',
         author: 'John Smith',
         date: '2022-11-15'
       },
       {
         title: 'Senate passes voting rights bill',
         description: 'The Senate passed a voting rights bill on Tuesday that would expand access to voting and limit partisan gerrymandering. The bill faces an uncertain future in the House of Representatives, where it may not have enough support to pass.',
-        image: 'https://cdn.pixabay.com/photo/2022/02/24/16/19/vote-7022955_1280.jpg',
+        image: 'https://www.shutterstock.com/fr/image-photo/business-people-working-meeting-conference-close-1413018278',
         author: 'Jane Smith',
         date: '2022-10-22'
       },
@@ -238,9 +232,9 @@ const newsData = [
 var search = '';
 $('#search').on('click', function () {
   console.log($('#select').val());
-  for (const iterator of newsData) {
+  for (var iterator of newsData) {
     if (iterator.category == $('#select').val()) {
-      for (const iterato of iterator.articles) {
+      for (var iterato of iterator.articles) {
         $('#news-articles').append(
           "<div class ='article' >" +
             '<p>' +
